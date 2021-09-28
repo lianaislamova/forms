@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>Формы</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <form class="container form-horizontal was-validated">
+      <h2>2. Заполните поля:</h2>
+      <p>Пароль будет создан автоматически и отправлен на эл. почту</p>
+      <hr>
+      <div class="form-group row">
+        <label for="org" class="col-md-2 col-form-label">Организация*</label>
+        <div class="col">
+          <input class="form-control col" type="text" list="org" placeholder="Начните вводить название организации и выберите из списка" required>
+            <div class="invalid-feedback">Введите организацию.</div>
+          <datalist id="org">
+            <option>ГАПОУ КП№11</option>
+            <option>СГКПиСО Слободской государственный колледж педагогики и социальных отношений (г.Слободской)</option>
+            </datalist>
+            <p>Например, СГКПиСО или Слободской государственный колледж педагогики и социальных отношений (г.Слободской)
+            <br> Не нашли свою организацию? <a href="#">Добавить организацию</a></p>
+        </div>
+
+      </div>
+
+      <div class="form-group row">
+         <label for="mail" class="col-md-2 col-form-label">Эл. почта*</label>
+         <div class="col-sm-5">
+         <input class="form-control" placeholder="Введите адрес эл. почты" type="email" id="mail" required>
+         <div class="invalid-feedback">Введите почту.</div>
+         </div>
+         <div class="col-sm-5">
+           <p>Указанный E-mail будет использоваться в качестве логина для входа в учетную запись</p>
+         </div>
+      </div>
+
+       <div class="form-group row">
+         <label for="surname" class="col-md-2 col-form-label">Фамилия*</label>
+         <div class="col-sm-5">
+         <input class="form-control" placeholder="Введите фамилию" type="text" id="surname" required>
+            <div class="invalid-feedback">Введите фамилию.</div>
+         </div>
+         <div class="col-sm-5">
+         <input class="form-control" placeholder="Введите вторую фамилию" type="text" id="surname" required>
+          <div class="invalid-feedback">Введите вторую фамилию.</div>
+         </div>
+      </div>
+      <br>
+
+      <div class="form-group row">
+         <label for="surname" class="col-md-2 col-form-label">Имя*</label>
+         <div class="col-sm">
+         <input class="form-control" placeholder="Введите имя" type="text" id="surname" required>
+         <div class="invalid-feedback">Введите имя.</div>
+         </div>
+      </div>
+      <br>
+
+      <div class="form-group row">
+         <label for="daddy" class="col-md-2 col-form-label">Отчество*</label>
+         <div class="col-sm"> 
+         <input class="form-control" placeholder="Введите отчество" type="text" id="daddy" required>
+         <div class="invalid-feedback">Введите отчество.</div>
+         </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-number-input" class="col-md-2 col-form-label">Пол*</label>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Мужской
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Женский
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-tel-input" class="col-md-2 col-form-label">Телефон</label>
+        <select class="form-control col-md-2" id="exampleFormControlSelect1" required>
+          <option>Личный</option>
+          <option>Рабочий</option>
+        </select>
+        <div class="col-md">
+          <input class="form-control col" type="tel" placeholder="+7(___)___-____" id="example-tel-input" required>
+          <div class="invalid-feedback">Введите телефон.</div>
+        </div>
+
+      </div>
+
+      <div class="form-check form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked required>
+        <label class="form-check-label" for="inlineCheckbox1">Я соглашаюсь на <a href="#" class="text-dark">публикацию цифровой активности</a></label>
+        <div class="invalid-feedback">Примите соглашение.</div>
+      </div>
+      <br>
+      <div class="form-check form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Я хочу получать новости и полезные материалы</label>
+      </div>
+    </form>
+  </body>
+</html>
